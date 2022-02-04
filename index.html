@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="omer.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="dogukan.css">
+    
 </head>
 
 <body>
@@ -79,16 +78,7 @@
                 </div>
             </div>
         </nav>
-        <header>
-            <div class="jumbotrun bg-dark text-white">
-                <div class="container">
-                    <div class="col-md-6">
-
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section>
+        <section class="">
             <div>
                 <div class="pomo">
                   <div class="pomo-border"></div>
@@ -106,9 +96,13 @@
                   </div>
                   <div class="task-container">
                     <div class="task-list">
-                      <span class="task">Tasks</span>
+                        <div class="task-with-dots">
+                            <span class="task">Tasks</span>
+                            <i class="fas fa-ellipsis-v" ></i>
+                        </div>
+  
+                      
                       <div class="task-icon-container">
-                        <button class="task-btn">
                           <img src="icons/threedots-white.png" alt="" class="task-icon">
                         </button>
                       </div>
@@ -116,7 +110,7 @@
                     <div class="task-border"></div>
                     <div class="add-task-container">
                       <img src="icons/plus-circle-white.png" alt="" class="add-task-icon">
-                      <div class="add-task">Add Task</div>
+                      <div class="add-task"><i class="fas fa-plus" style="margin-right: 10px; border: 1px solid gray; padding: 8px; border-radius: 6px; "></i>Add Task</div>
                     </div>
                   </div>
                 </div>
@@ -124,41 +118,21 @@
     </div>
 
     <footer class="main__footer">
-        <div class="info">
-            <div class="info1">
-                <h3 class="info__head">What is Pomodoro Technique?</h3>
-
-                <br />
-                <p>
-                    The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s.[1] It uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro,
-                    from the Italian word for tomato, after the tomato-shaped kitchen timer Cirillo used as a university student
-                </p>
-                <br />
-
-                <p>
-                    The technique has been widely popularized by apps and websites providing timers and instructions. Closely related to concepts such as timeboxing and iterative and incremental development used in software design, the method has been adopted in pair programming
-                    contexts
-                </p>
-                <br />
-                <br />
-                <hr />
-            </div>
-
-        </div>
+  
         <h2>People worked on this project</h2>
         <i class="fas fa-chevron-down"></i>
         <div class="people">
             <div class="person">
                 <h3>Ömer Koçar</h3>
-                <a href="#"><img class="avatar" src="avatar.png" alt="photo" /></a>
+                <a href="#"><img class="avatar" src="blond2.jpg" alt="photo" /></a>
             </div>
             <div class="person">
                 <h3>feride mavigök</h3>
-                <a href="#"><img class="avatar" src="avatar.png" alt="photo" /></a>
+                <a href="#"><img class="avatar" src="girl.png" alt="photo" /></a>
             </div>
             <div class="person">
                 <h3>doğukan özcan</h3>
-                <a href="#"><img class="avatar" src="avatar.png" alt="photo" /></a>
+                <a href="#"><img class="avatar" src="boy.png" alt="photo" /></a>
             </div>
         </div>
 
