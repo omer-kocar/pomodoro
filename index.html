@@ -1,90 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="omer.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="navbar.css" />
+</head>
+
+<body>
     <div class="container">
-      <header class="header">
-        <h1>Header</h1>
-      </header>
-      <section>
-        <h1>body</h1>
-      </section>
+        <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
+            <div>
+                <a href="/" class="navbar-brand"></i>&nbsp;<i class="fas fa-check-circle"></i> Pomodoro-Tracker</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="istatistik.html" class="nav-link active">
+                                <i class="fas fa-chart-bar"></i> İstatistikler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ayarlar.html" class="nav-link active">
+                                <i class="fas fa-cog"></i>Ayarlar</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user-circle"></i>
+                             Kayıt/ Giriş
+                            </button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item ">
+                                        <a href="https://accounts.google.com/AccountChooser/identifier?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" class="c-login_btn">
+                                            <img src="https://www.60otoarif.com/Data/Social/original/60-oto-arif/39216d73519bca962bd4a01f3e8f4a4b.png" width="20px" class="c-login_btn_icon" />
+                                            <span class="c-login_btn_text">
+                                        Google ile oturum açın
+                                        </span>
+                                        </a>
+                                    </a>
+                                    <a href="" class="dropdown-item">
+                                        <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1603087355&extra_1=s%7Cc%7C305000809581%7Ce%7Cfacebook%20giri%C5%9F%7C&placement=&creative=305000809581&keyword=facebook%20giri%C5%9F&partner_id=googlesem&extra_2=campaignid%3D1603087355%26adgroupid%3D61834756558%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-325251754076%26loc_physical_ms%3D9056820%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI_YCEwqXm9QIVgrLVCh2fWAlUEAAYASAAEgKb4_D_BwE"
+                                            class="c-login_btn">
+                                            <i class="fab fa-facebook c-login_btn_icon"></i>
+                                            <span class="c-login_btn_text">
+                                        Facebook ile oturum açın
+                                        </span>
+                                        </a>
+                                    </a>
+                                    <a href="" class="dropdown-item">
+                                        <a href="https://github.com/" class="c-login_btn">
+                                            <i class="fab fa-github c-login_btn_icon"></i>
+                                            <span class="c-login_btn_text">
+                                        Github ile oturum açın
+                                        </span>
+                                        </a>
+                                    </a>
+                                    <a href="" class="dropdown-item">
+                                        <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1643986231&rver=7.0.6738.0&wp=MBI_SSL&wreply=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin%3Fru%3Dhttps%253A%252F%252Faccount.microsoft.com%252Fprofile%252Fcommunications%253Flang%253Dtr-TR%2526refd%253Dwww.google.com&lc=1055&id=292666&lw=1&fl=easi2&ru=https%3A%2F%2Faccount.microsoft.com%2Fprofile%2F"
+                                            class="c-login_btn">
+                                            <img src="https://e7.pngegg.com/pngimages/796/1013/png-clipart-microsoft-corporation-microsoft-windows-mobile-app-shenmue-application-software-microsoft-icon-angle-rectangle.png" class="c-login_btn_icon" width="20px" />                                            Microsoft ile oturum açın
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="jumbotrun bg-dark text-white">
+                <div class="container">
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h1>body</h1>
+        </section>
     </div>
 
     <footer class="main__footer">
-      <div class="info">
-        <div class="info1">
-          <h3 class="info__head">What is Pomodoro Technique?</h3>
+        <div class="info">
+            <div class="info1">
+                <h3 class="info__head">What is Pomodoro Technique?</h3>
 
-          <br />
-          <p>
-            The Pomodoro Technique is a time management method developed by
-            Francesco Cirillo in the late 1980s.[1] It uses a timer to break
-            work into intervals, traditionally 25 minutes in length, separated
-            by short breaks. Each interval is known as a pomodoro, from the
-            Italian word for tomato, after the tomato-shaped kitchen timer
-            Cirillo used as a university student
-          </p>
-          <br />
+                <br />
+                <p>
+                    The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s.[1] It uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro,
+                    from the Italian word for tomato, after the tomato-shaped kitchen timer Cirillo used as a university student
+                </p>
+                <br />
 
-          <p>
-            The technique has been widely popularized by apps and websites
-            providing timers and instructions. Closely related to concepts such
-            as timeboxing and iterative and incremental development used in
-            software design, the method has been adopted in pair programming
-            contexts
-          </p>
-          <br />
-          <br />
-          <hr />
+                <p>
+                    The technique has been widely popularized by apps and websites providing timers and instructions. Closely related to concepts such as timeboxing and iterative and incremental development used in software design, the method has been adopted in pair programming
+                    contexts
+                </p>
+                <br />
+                <br />
+                <hr />
+            </div>
+
         </div>
-        
-      </div>
-      <h2>People worked on this project</h2>
-      <i class="fas fa-chevron-down"></i>
-      <div class="people">
-        <div class="person">
-          <h3>Ömer Koçar</h3>
-          <a href="#"><img class="avatar" src="avatar.png" alt="photo" /></a>
+        <h2>People worked on this project</h2>
+        <i class="fas fa-chevron-down"></i>
+        <div class="people">
+            <div class="person">
+                <h3>Ömer Koçar</h3>
+                <a href="#"><img class="avatar" src="avatar.png" alt="photo" /></a>
+            </div>
+            <div class="person">
+                <h3>feride mavigök</h3>
+                <a href="#"><img class="avatar" src="avatar.png" alt="photo" /></a>
+            </div>
+            <div class="person">
+                <h3>doğukan özcan</h3>
+                <a href="#"><img class="avatar" src="avatar.png" alt="photo" /></a>
+            </div>
         </div>
-        <div class="person">
-          <h3>feride mavigök</h3>
-          <a href="#"><img class="avatar" src="avatar.png" alt="photo" /></a>
+
+        <div class="footer__allrights">
+            <div class="footer__icons">
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-android"></i>
+                <span>|</span>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <span>|</span>
+            </div>
+            <div class="altyazi">
+                <h3>© Pomodoro-Kodluyoruz 2022. All Rights Reserved.</h3>
+            </div>
+
         </div>
-        <div class="person">
-          <h3>doğukan özcan</h3>
-          <a href="#"><img class="avatar" src="avatar.png" alt="photo" /></a>
-        </div>
-      </div>
-      
-      <div class="footer__allrights">
-        <div class="footer__icons">
-          <i class="fab fa-apple"></i>
-          <i class="fab fa-android"></i>
-          <span>|</span>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <span>|</span>
-        </div>
-        <div class="altyazi"><h3>© Pomodoro-Kodluyoruz 2022. All Rights Reserved.</h3></div>
-        
-      </div>
     </footer>
 
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>
