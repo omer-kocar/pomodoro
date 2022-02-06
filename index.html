@@ -5,14 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pomodoro-Tracker</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    
+
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                                 <i class="fas fa-chart-bar"></i> İstatistikler</a>
                         </li>
                         <li class="nav-item">
-                            <a href="ayarlar.html" class="nav-link active">
+                            <a href="#" class="nav-link active" id="setting">
                                 <i class="fas fa-cog"></i>Ayarlar</a>
                         </li>
                         <li class="nav-item">
@@ -78,82 +78,131 @@
                 </div>
             </div>
         </nav>
+        <!--Modal-->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Ayarlar</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        Time(minutes)
+                        <table style="width:100%">
+                            <tr>
+                                <th>Pomodoro</th>
+                                <th>Short Break</th>
+                                <th>Long Break</th>
+                            </tr>
+                            <tr>
+                                <td><label for="pomodoro"></label></td>
+                                <td><label for="short-break"></label></td>
+                                <td><label for="long-break"></label></td>
+                            </tr>
+                        </table>
+                        <p>Auto start Breaks?</p>
+                        <hr>
+                        <p>Auto start Pomodoros?</p>
+                        <hr>
+                        <p>Long Break interval</p>
+                        <hr>
+                        <p>Alarm Sound
+                            <select name="" id="">
+                            <option value="">Kithcen</option>
+                            <option value="">Bell</option>
+                            <option value="">Bell</option>
+                          </select>
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                  close
+                </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------------------------------------->
         <section class="">
             <div>
                 <div class="pomo">
-                  <div class="pomo-border"></div>
-                  <div class="body-box">
-                    <div class="time-box">
-                      <div class="time-btn-wrapper">
-                        <button class="time-btn">Pomodoro</button>
-                        <button class="time-btn">Short Break</button>
-                        <button class="time-btn">Long Break</button>
-                      </div>
-                      <div class="time-count">25:00</div>
-                      <button class="time-count-btn">START</button>
-                    </div>
-                    <div class="lets-work">Time to work!</div>
-                  </div>
-                  <div class="task-container">
-                    <div class="task-list">
-                        <div class="task-with-dots">
-                            <span class="task">Tasks</span>
-                            <i class="fas fa-ellipsis-v" ></i>
+                    <div class="pomo-border"></div>
+                    <div class="body-box">
+                        <div class="time-box">
+                            <div class="time-btn-wrapper">
+                                <button class="time-btn">Pomodoro</button>
+                                <button class="time-btn">Short Break</button>
+                                <button class="time-btn">Long Break</button>
+                            </div>
+                            <div class="time-count">25:00</div>
+                            <button class="time-count-btn">START</button>
                         </div>
-  
-                      
-                      <div class="task-icon-container">
-                          <img src="icons/threedots-white.png" alt="" class="task-icon">
-                        </button>
-                      </div>
+                        <div class="lets-work">Time to work!</div>
                     </div>
-                    <div class="task-border"></div>
-                    <div class="add-task-container">
-                      <img src="icons/plus-circle-white.png" alt="" class="add-task-icon">
-                      <div class="add-task"><i class="fas fa-plus" style="margin-right: 10px; border: 1px solid gray; padding: 8px; border-radius: 6px; "></i>Add Task</div>
+                    <div class="task-container">
+                        <div class="task-list">
+                            <div class="task-with-dots">
+                                <span class="task">Tasks</span>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+
+
+                            <div class="task-icon-container">
+                                <img src="icons/threedots-white.png" alt="" class="task-icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="task-border"></div>
+                        <div class="add-task-container">
+                            <img src="icons/plus-circle-white.png" alt="" class="add-task-icon">
+                            <div class="add-task"><i class="fas fa-plus" style="margin-right: 10px; border: 1px solid gray; padding: 8px; border-radius: 6px; "></i>Add Task</div>
+                        </div>
                     </div>
-                  </div>
                 </div>
         </section>
-    </div>
-
-    <footer class="main__footer">
-  
-        <h2>People worked on this project</h2>
-        <i class="fas fa-chevron-down"></i>
-        <div class="people">
-            <div class="person">
-                <h3>Ömer Koçar</h3>
-                <a href="#"><img class="avatar" src="blond2.jpg" alt="photo" /></a>
-            </div>
-            <div class="person">
-                <h3>feride mavigök</h3>
-                <a href="#"><img class="avatar" src="girl.png" alt="photo" /></a>
-            </div>
-            <div class="person">
-                <h3>doğukan özcan</h3>
-                <a href="#"><img class="avatar" src="boy.png" alt="photo" /></a>
-            </div>
         </div>
 
-        <div class="footer__allrights">
-            <div class="footer__icons">
-                <i class="fab fa-apple"></i>
-                <i class="fab fa-android"></i>
-                <span>|</span>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <span>|</span>
-            </div>
-            <div class="altyazi">
-                <h3>© Pomodoro-Kodluyoruz 2022. All Rights Reserved.</h3>
+        <footer class="main__footer">
+
+            <h2>People worked on this project</h2>
+            <i class="fas fa-chevron-down"></i>
+            <div class="people">
+                <div class="person">
+                    <h3>Ömer Koçar</h3>
+                    <a href="#"><img class="avatar" src="img/blond2.jpg" alt="photo" /></a>
+                </div>
+                <div class="person">
+                    <h3>feride mavigök</h3>
+                    <a href="#"><img class="avatar" src="img/girl.png" alt="photo" /></a>
+                </div>
+                <div class="person">
+                    <h3>doğukan özcan</h3>
+                    <a href="#"><img class="avatar" src="img/boy.png" alt="photo" /></a>
+                </div>
             </div>
 
-        </div>
-    </footer>
+            <div class="footer__allrights">
+                <div class="footer__icons">
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-android"></i>
+                    <span>|</span>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <span>|</span>
+                </div>
+                <div class="altyazi">
+                    <h3>© Pomodoro-Kodluyoruz 2022. All Rights Reserved.</h3>
+                </div>
 
-    <script src="app.js"></script>
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
 </body>
 
 </html>
