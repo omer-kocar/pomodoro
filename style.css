@@ -198,6 +198,8 @@
 }
 
 .time-count {
+  display: flex;
+  justify-content: center;
   font-size: 120px;
   font-weight: bold;
   margin-top: 20px;
