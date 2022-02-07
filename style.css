@@ -1,328 +1,293 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(80, 80, 80);
-  padding: 16px;
-  color: white;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 80, 80);
+    padding: 16px;
+    color: white;
 }
 
 .container section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
 }
 
 .container {
-  height: 100vh;
- 
+    height: 100vh;
 }
 
 .main__footer h2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 150px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .main__footer i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .person,
 .h3 {
-  font-weight: 400;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
 }
 
 .people {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(white, rgb(27, 27, 27));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(white, rgb(27, 27, 27));
 }
 
 .person {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  padding: 10rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
 }
 
 .avatar {
-  height: 10rem;
-  margin: 25px;
-  padding: 20px;
-  align-items: center;
-  border-radius: 100px;
-  cursor: pointer;
+    height: 10rem;
+    margin: 25px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
 }
 
 .person span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 25px;
 }
 
 .footer__allrights {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: linear-gradient(rgb(27, 27, 27), black);
-  color: white;
-  padding-top: 5em;
-  padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgb(27, 27, 27), black);
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 15px;
 }
 
 .footer__icons {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 35px;
-  padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+    padding-bottom: 30px;
 }
+
 .altyazi {
-  display: flex;
-  justify-content: center;
-  padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
 }
+
 .fab {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .fa-apple:hover {
-  color: gray;
-  background-image: linear-gradient(gray, black);
-  padding: 16px;
-  border-radius: 50px;
-  transition: all 0.7;
+    color: gray;
+    background-image: linear-gradient(gray, black);
+    padding: 16px;
+    border-radius: 50px;
+    transition: all 0.7;
 }
 
 .fa-android:hover {
-  color: green;
-  background-image: linear-gradient(rgb(21, 173, 21), black);
-  padding: 16px;
-  border-radius: 50px;
-  transition: all 0.7;
+    color: green;
+    background-image: linear-gradient(rgb(21, 173, 21), black);
+    padding: 16px;
+    border-radius: 50px;
+    transition: all 0.7;
 }
 
 .fa-facebook:hover {
-  color: blue;
-  background-image: linear-gradient(rgb(95, 95, 247), black);
-  padding: 16px;
-  border-radius: 50px;
-  transition: all 0.7;
+    color: blue;
+    background-image: linear-gradient(rgb(95, 95, 247), black);
+    padding: 16px;
+    border-radius: 50px;
+    transition: all 0.7;
 }
 
 .fa-twitter:hover {
-  color: rgb(0, 113, 165);
-  background-image: linear-gradient(rgb(0, 113, 165), black);
-  padding: 16px;
-  border-radius: 50px;
-  transition: all 0.7;
+    color: rgb(0, 113, 165);
+    background-image: linear-gradient(rgb(0, 113, 165), black);
+    padding: 16px;
+    border-radius: 50px;
+    transition: all 0.7;
 }
 
 .fa-instagram:hover {
-  color: brown;
-  background-image: linear-gradient(rgb(168, 57, 57), black);
-  padding: 16px;
-  border-radius: 50px;
-  transition: all 0.7;
+    color: brown;
+    background-image: linear-gradient(rgb(168, 57, 57), black);
+    padding: 16px;
+    border-radius: 50px;
+    transition: all 0.7;
 }
 
 .info {
-  display: inline-block;
-  padding: 50px;
-  margin-left: 50em;
-  margin-right: 50em;
-  background: rgba(0, 255, 255, 0.171);
+    display: inline-block;
+    padding: 50px;
+    margin-left: 50em;
+    margin-right: 50em;
+    background: rgba(0, 255, 255, 0.171);
 }
-.info > h3 {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
+
+.info>h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
 }
 
 .pomo {
-  text-align: center;
+    text-align: center;
 }
 
 .pomo-border {
-  background-color: rgba(197, 46, 46, 0.1);
-  height: 1px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  width: 620px;
-  margin-left: auto;
-  margin-right: auto;
+    background-color: rgba(197, 46, 46, 0.1);
+    height: 1px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .body-box {
-  max-width: 480px;
-  margin: auto;
-  background-color: rgb(236, 87, 87);
-  border-radius: 20px;
+    max-width: 480px;
+    margin: auto;
+    background-color: rgb(236, 87, 87);
+    border-radius: 20px;
 }
 
 .time-box {
-  background-color: rgba(233, 230, 230, 0.1);
-  padding: 20px 0px 30px;
-  border-radius: 50px;
-  margin-bottom: 20px;
-  width: 100%;
+    background-color: rgba(233, 230, 230, 0.1);
+    padding: 20px 0px 30px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .time-btn {
-  border: none;
-  color: rgb(243, 235, 235);
-  margin: 0px;
-  border-radius: 4px;
-  font-family: "Varela Round", sans-serif;
-  font-size: 18px;
-  padding: 2px 12px;
-  height: 28px;
-  cursor: pointer;
-  background: none;
-  box-shadow: none;
-  font-weight: 400;
+    border: none;
+    color: rgb(243, 235, 235);
+    margin: 0px;
+    border-radius: 4px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 18px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none;
+    box-shadow: none;
+    font-weight: 400;
 }
 
 .time-count {
-  display: flex;
-  justify-content: center;
-  font-size: 120px;
-  font-weight: bold;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 .time-count-btn {
-  cursor: pointer;
-  border: none;
-  margin: 20px 0px 0px;
-  padding: 0px 12px;
-  border-radius: 4px;
-  box-shadow: rgb(211, 148, 148) 0px 6px 0px;
-  font-family: "Varela Round", sans-serif;
-  font-size: 22px;
-  height: 55px;
-  color: rgb(240, 91, 86);
-  font-weight: bold;
-  width: 200px;
-  background-color: white;
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    box-shadow: rgb(211, 148, 148) 0px 6px 0px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 22px;
+    height: 55px;
+    color: rgb(240, 91, 86);
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
 }
 
 .lets-work {
-  padding: 16px;
-  background: gray;
-  font-size: 20px;
-  font-weight: 400;
-  color: white;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+    padding: 16px;
+    background: gray;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.task-container {
-  max-width: 480px;
-  margin: 28px auto 42px;
+.task-container {}
+
+#cd-hd {
+    background-color: #EC6565;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 4px 0px;
+    right: 0px;
+    color: #fff
 }
 
-.task-list {
-  display: flex;
-  align-items: center;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
-  padding-bottom: 14px;
-  background: rgb(240, 91, 86);
-  border-radius: 8px ;
+.card {
+    border-radius: 8px;
+    border: none;
 }
 
 .task {
-  font-size: 18px;
-  font-weight: bold;
-  justify-content: space-between;
-}
-.task-with-dots {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.task-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 4px;
-  cursor: pointer;
-  opacity: 0.9;
-  background: none rgba(243, 239, 239, 0.2);
-  box-shadow: none;
-  margin-left: 10px;
-  font-size: 13px;
-  padding: 8px;
-  border: none;
+    opacity: 0.9;
+    background-color: gray;
+    font-size: 13px;
+    border: none;
 }
 
-.task-icon {
-  width: 16px;
-}
-
-.task-border {
-  border-radius: 4px;
-  opacity: 1;
-  padding: 4px 0px;
-  width: 200px;
-  right: 0px;
-}
-
-.add-task-container {
-  width: 100%;
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  opacity: 0.8;
-  margin-top: 12px;
-  border: 3px dashed rgba(255, 255, 255, 0.4);
-}
-
-.add-task-icon {
-  width: 18px;
-  margin-right: 8px;
-  opacity: 0.8;
+.task-container {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 12px;
+    max-width: 480px;
+    margin: 28px auto 42px;
 }
 
 .navbar {
-  opacity: 0.8;
-  border: 1px solid #fff;
+    opacity: 0.8;
+    border: 1px solid #fff;
 }
 
 .brd {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 .jumbotrun {
-  padding-top: 100px;
-  padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 
 .nav-item {
-  display: flex;
+    display: flex;
 }
- 
 
 .altyazi h3 {
-  font-size: 16px;
-  padding: 10px;
+    font-size: 16px;
+    padding: 10px;
 }

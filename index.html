@@ -2,22 +2,30 @@
 <html lang="en">
 
 <head>
+    <!--Meta-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pomodoro-Tracker</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!--Bootsrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <!--CSS-->
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Pomodoro-Tracker</title>
 
 </head>
 
 <body class="bdy">
     <div class="container">
+        <!--Navbar-->
         <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
             <div>
                 <a href="/" class="navbar-brand"></i>&nbsp;<i class="fas fa-check-circle"></i> Pomodoro-Tracker</a>
@@ -40,7 +48,7 @@
                                 <button id="login" class="btn btn-dark dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user-circle"></i>
                              Kayıt/ Giriş
                             </button>
-                                
+
                             </div>
                         </li>
                     </ul>
@@ -94,7 +102,8 @@
                 </div>
             </div>
         </div>
-        <!-------------------------------------------------------------------------->
+
+        <!--Login Form-->
         <div class="signup-form">
             <form action="index.html">
                 <button id="close" type="button" class="close" data-dismiss="modal">
@@ -108,52 +117,63 @@
                 <a href="#">Already Have One ?</a>
             </form>
         </div>
-        <!-------------------------------------------------------------------------->
+
+        <!--Kronometre-->
         <section class="">
-            <div>
-                <div class="pomo">
-                    <div class="pomo-border"></div>
-                    <div class="body-box">
-                        <div class="time-box">
-                            <div class="time-btn-wrapper">
-                                <button class="time-btn">Pomodoro</button>
-                                <button class="time-btn">Short Break</button>
-                                <button class="time-btn">Long Break</button>
-                            </div>
-                            <div class="time-count">
-                                <p>25</p>
-                                <p>:</p>
-                                <p>00</p>
-                            </div>
-                            <button class="time-count-btn">START</button>
+            <div class="pomo">
+                <div class="pomo-border"></div>
+                <div class="body-box">
+                    <div class="time-box">
+                        <div class="time-btn-wrapper">
+                            <button class="time-btn">Pomodoro</button>
+                            <button class="time-btn">Short Break</button>
+                            <button class="time-btn">Long Break</button>
                         </div>
-                        <div class="lets-work">Time to work!</div>
+                        <div class="time-count">
+                            <p>25</p>
+                            <p>:</p>
+                            <p>00</p>
+                        </div>
+                        <button class="time-count-btn">START</button>
                     </div>
-                    <div class="task-container">
-                        <div class="task-list">
-                            <div class="task-with-dots">
-                                <span class="task">Tasks</span>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
+                    <div class="lets-work">Time to work!</div>
+                </div>
 
-
-                            <div class="task-icon-container">
-                                <img src="icons/threedots-white.png" alt="" class="task-icon">
-                                </button>
-                            </div>
+                <!--To Do List-->
+                <div class="task-container">
+                    <div class="card">
+                        <div class="card-header" id="cd-hd">
+                            <h5>Add Task</h5>
                         </div>
-                        <div class="task-border"></div>
-                        <div class="add-task-container">
-                            <img src="icons/plus-circle-white.png" alt="" class="add-task-icon">
-                            <div class="add-task"><i class="fas fa-plus" style="margin-right: 10px; border: 1px solid gray; padding: 8px; border-radius: 6px; "></i>Add Task</div>
+                        <div class="card-body task">
+                            <form id="addTaskForm">
+                                <div class="input-group mb-3">
+                                    <input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="What would you like to do today ?" aria-describedby="btnAddNewTask">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-danger" type="submit" id="btnAddNewTask">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-header" id="cd-hd">
+                                <h5>Task List</h5>
+                                <a id="btnDeleteAll" href="#" class="btn btn-outline-light btn-sm delete-all float-right">	
+                                   Delete All
+                                </a>
+                            </div>
+                            <ul id="task-list" class="list-group">
+                            </ul>
                         </div>
                     </div>
                 </div>
         </section>
-    </div>
-
+        </div>
+        <!--Footer--->
         <footer class="main__footer">
-
             <h2>People worked on this project</h2>
             <i class="fas fa-chevron-down"></i>
             <div class="people">
@@ -170,7 +190,6 @@
                     <a href="#"><img class="avatar" src="img/boy.png" alt="photo" /></a>
                 </div>
             </div>
-
             <div class="footer__allrights">
                 <div class="footer__icons">
                     <i class="fab fa-apple"></i>
