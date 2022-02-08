@@ -182,6 +182,7 @@
     padding: 20px 0px 30px;
     border-radius: 50px;
     margin-bottom: 20px;
+
     width: 100%;
 }
 
@@ -193,11 +194,20 @@
     font-family: "Varela Round", sans-serif;
     font-size: 18px;
     padding: 2px 12px;
+   
     height: 28px;
     cursor: pointer;
-    background: none;
+    background:rgb(80, 80, 80, 0.5);
     box-shadow: none;
     font-weight: 400;
+    transition: 0.2s;
+
+}
+
+.time-btn:hover {
+    background-color: blanchedalmond;
+    color: rgb(36, 66, 56);
+    transition: 0.8s;
 }
 
 .time-count {
@@ -233,8 +243,6 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
-.task-container {}
 
 #cd-hd {
     background-color: #EC6565;
@@ -290,4 +298,13 @@
 .altyazi h3 {
     font-size: 16px;
     padding: 10px;
+}
+
+.text__input {
+    padding: 15px;
+   
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 6px;
+    
 }

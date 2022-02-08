@@ -117,24 +117,29 @@
                 <a href="#">Already Have One ?</a>
             </form>
         </div>
-
+        
         <!--Kronometre-->
         <section class="">
             <div class="pomo">
-                <div class="pomo-border"></div>
                 <div class="body-box">
                     <div class="time-box">
                         <div class="time-btn-wrapper">
-                            <button class="time-btn">Pomodoro</button>
-                            <button class="time-btn">Short Break</button>
-                            <button class="time-btn">Long Break</button>
+                            <button class="time-btn pomodoro__default">Pomodoro</button>
+                            <button class="short__break time-btn">Short Break</button>
+                            <button class="long__break time-btn">Long Break</button>
                         </div>
                         <div class="time-count">
-                            <p>25</p>
-                            <p>:</p>
-                            <p>00</p>
+                            <div class="timer">
+                                <span class="timer__part minutes ">25</span>
+                                <span class="timer__part">:</span>
+                                <span class="timer__part seconds">00</span>
+                            </div>
                         </div>
-                        <button class="time-count-btn">START</button>
+                        <input type="number" value="" class="text__input"  >
+                        <button class="timer__btn__start time-count-btn">START</button>
+                        <button class="timer__btn__pause time-count-btn">PAUSE</button>
+                        <button class="timer__btn__reset time-count-btn">RESET</button>
+                        
                     </div>
                     <div class="lets-work">Time to work!</div>
                 </div>
