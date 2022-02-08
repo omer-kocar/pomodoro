@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(white, rgb(27, 27, 27));
+    background-image: linear-gradient(#fff, rgb(27, 27, 27));
 }
 
 .person {
@@ -159,6 +159,12 @@
 .pomo {
     text-align: center;
     margin-bottom: 300px;
+    background-image: url(img/bg.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .pomo-border {
@@ -283,7 +289,7 @@
 
 #navbarCollapse {
     float: right;
-    margin-left: 58rem;
+    margin-left: 55rem;
     font-size: 20px;
 }
 
@@ -329,4 +335,13 @@
 
 .fa-times {
     color: #fff;
+}
+
+.modal-body {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
