@@ -196,16 +196,9 @@
     padding: 2px 12px;
     height: 28px;
     cursor: pointer;
-    background: rgb(80, 80, 80, 0.5);
+    background: none;
     box-shadow: none;
     font-weight: 400;
-    transition: 0.2s;
-}
-
-.time-btn:hover {
-    background-color: blanchedalmond;
-    color: rgb(36, 66, 56);
-    transition: 0.8s;
 }
 
 .time-count {
@@ -242,7 +235,8 @@
     border-bottom-right-radius: 20px;
 }
 
-#cd-hd {
+
+/* #cd-hd {
     background-color: #EC6565;
     border-radius: 8px;
     opacity: 1;
@@ -251,16 +245,16 @@
     color: #fff
 }
 
-.card {
+#crd {
     border-radius: 8px;
     border: none;
-}
+    padding: 5px;
+} */
 
 .task {
     opacity: 0.9;
     background-color: gray;
     font-size: 13px;
-    border-radius: 8px;
     border: none;
 }
 
@@ -271,7 +265,6 @@
     border-radius: 8px;
     align-items: center;
     cursor: pointer;
-    margin-top: 12px;
     max-width: 480px;
     margin: 28px auto 42px;
 }
@@ -284,7 +277,6 @@
 #navbarCollapse {
     float: right;
     margin-left: 58rem;
-    font-size: 20px;
 }
 
 .brd {
@@ -305,28 +297,6 @@
     padding: 10px;
 }
 
-.text__input {
-    padding: 15px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 6px;
-}
-
 .txt {
     border: none;
-}
-
-.card,
-.card-body {
-    border-radius: 8px;
-}
-
-.list-group-item {
-    background-color: #EC6565;
-    color: #fff;
-    font-size: 18px;
-}
-
-.fa-times {
-    color: #fff;
 }
