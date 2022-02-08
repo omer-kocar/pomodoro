@@ -182,7 +182,6 @@
     padding: 20px 0px 30px;
     border-radius: 50px;
     margin-bottom: 20px;
-
     width: 100%;
 }
 
@@ -194,14 +193,12 @@
     font-family: "Varela Round", sans-serif;
     font-size: 18px;
     padding: 2px 12px;
-   
     height: 28px;
     cursor: pointer;
-    background:rgb(80, 80, 80, 0.5);
+    background: rgb(80, 80, 80, 0.5);
     box-shadow: none;
     font-weight: 400;
     transition: 0.2s;
-
 }
 
 .time-btn:hover {
@@ -302,9 +299,25 @@
 
 .text__input {
     padding: 15px;
-   
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 6px;
-    
+}
+
+.txt {
+    border: none;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.list-group-item {
+    background-color: #EC6565;
+    color: #fff;
+    font-size: 18px;
+}
+
+.fa-times {
+    color: #fff;
 }

@@ -37,182 +37,200 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a href="statistics.html" class="nav-link active">
-                                <i class="fas fa-chart-bar"></i> İstatistikler</a>
+                                <i class="fas fa-chart-bar"></i> Statistics</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link active" id="setting">
-                                <i class="fas fa-cog"></i>Ayarlar</a>
+                                <i class="fas fa-cog"></i>Settings</a>
                         </li>
                         <li class="nav-item">
-                            <div class="dropdown">
-                                <button id="login" class="btn btn-dark dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user-circle"></i>
-                             Kayıt/ Giriş
-                            </button>
+                            <button id="login" class="btn btn-dark"><i class="fas fa-user-circle"></i>
+                             Sign up
+                               </button>
 
-                            </div>
-                        </li>
-                    </ul>
                 </div>
+                </li>
+                </ul>
             </div>
-        </nav>
-        <!--Modal-->
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-sm modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title">Ayarlar</h2>
-                        <button type="button" class="close" data-dismiss="modal">
+    </div>
+    </nav>
+    <!--Modal-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Settings</h2>
+                    <button type="button" class="close" data-dismiss="modal">
                   &times;
                 </button>
-                    </div>
-                    <div class="modal-body">
-                        Time(minutes)
-                        <table style="width:100%">
-                            <tr>
-                                <th>Pomodoro</th>
-                                <th>Short Break</th>
-                                <th>Long Break</th>
-                            </tr>
-                            <tr>
-                                <td><label for="pomodoro"></label></td>
-                                <td><label for="short-break"></label></td>
-                                <td><label for="long-break"></label></td>
-                            </tr>
-                        </table>
-                        <p>Auto start Breaks?</p>
-                        <hr>
-                        <p>Auto start Pomodoros?</p>
-                        <hr>
-                        <p>Long Break interval</p>
-                        <hr>
-                        <p>Alarm Sound
-                            <select name="" id="">
+                </div>
+                <div class="modal-body">
+                    Time(minutes)
+                    <table style="width:100%">
+                        <tr>
+                            <th>Pomodoro</th>
+                            <th>Short Break</th>
+                            <th>Long Break</th>
+                        </tr>
+                        <tr>
+                            <td><label for="pomodoro"></label></td>
+                            <td><label for="short-break"></label></td>
+                            <td><label for="long-break"></label></td>
+                        </tr>
+                    </table>
+                    <p>Auto start Breaks?</p>
+                    <hr>
+                    <p>Auto start Pomodoros?</p>
+                    <hr>
+                    <p>Long Break interval</p>
+                    <hr>
+                    <p>Alarm Sound
+                        <select name="" id="">
                             <option value="">Kithcen</option>
                             <option value="">Bell</option>
                             <option value="">Bell</option>
                           </select>
-                        </p>
+                    </p>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
                   close
                 </button>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Login Form-->
-        <div class="signup-form">
-            <form action="index.html">
-                <button id="close" type="button" class="close" data-dismiss="modal">
-                    &times;
-                  </button>
-                <h1>Sing up</h1>
-                <input type="text" placeholder="Full name" class="txt">
-                <input type="email" placeholder="Email" class="txt">
-                <input type="password" placeholder="Password" class="txt">
-                <input type="submit" value="Create Account" class="create">
-                <a href="#">Already Have One ?</a>
-            </form>
-        </div>
-        
-        <!--Kronometre-->
-        <section class="">
-            <div class="pomo">
-                <div class="body-box">
-                    <div class="time-box">
-                        <div class="time-btn-wrapper">
-                            <button class="time-btn pomodoro__default">Pomodoro</button>
-                            <button class="short__break time-btn">Short Break</button>
-                            <button class="long__break time-btn">Long Break</button>
-                        </div>
-                        <div class="time-count">
-                            <div class="timer">
-                                <span class="timer__part minutes ">25</span>
-                                <span class="timer__part">:</span>
-                                <span class="timer__part seconds">00</span>
-                            </div>
-                        </div>
-                        <input type="number" value="" class="text__input"  >
-                        <button class="timer__btn__start time-count-btn">START</button>
-                        <button class="timer__btn__pause time-count-btn">PAUSE</button>
-                        <button class="timer__btn__reset time-count-btn">RESET</button>
-                        
-                    </div>
-                    <div class="lets-work">Time to work!</div>
+    <!--Login Form-->
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Sing up</h2>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
                 </div>
+                <div class="modal-body">
 
-                <!--To Do List-->
-                <div class="task-container">
-                    <div class="card">
-                        <div class="card-header" id="cd-hd">
-                            <h5>Add Task</h5>
+                    <p> <input type="text" placeholder="Full name" class="txt"></p>
+                    <hr>
+                    <p> <input type="email" placeholder="Email" class="txt"></p>
+                    <hr>
+                    <p> <input type="password" placeholder="Password" class="txt"></p>
+                    <hr>
+                    <p> <input type="button" value="Create Account" class="create"></p>
+                    <hr>
+                    <a href="#">Already Have One ?</a>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                      close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Kronometre-->
+    <section class="">
+        <div class="pomo">
+            <div class="body-box">
+                <div class="time-box">
+                    <div class="time-btn-wrapper">
+                        <button class="time-btn pomodoro__default">Pomodoro</button>
+                        <button class="short__break time-btn">Short Break</button>
+                        <button class="long__break time-btn">Long Break</button>
+                    </div>
+                    <div class="time-count">
+                        <div class="timer">
+                            <span class="timer__part minutes ">25</span>
+                            <span class="timer__part">:</span>
+                            <span class="timer__part seconds">00</span>
                         </div>
-                        <div class="card-body task">
-                            <form id="addTaskForm">
-                                <div class="input-group mb-3">
-                                    <input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="What would you like to do today ?" aria-describedby="btnAddNewTask">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-danger" type="submit" id="btnAddNewTask">
+                    </div>
+                    <input type="number" value="" class="text__input">
+                    <button class="timer__btn__start time-count-btn">START</button>
+                    <button class="timer__btn__pause time-count-btn">PAUSE</button>
+                    <button class="timer__btn__reset time-count-btn">RESET</button>
+
+                </div>
+                <div class="lets-work">Time to work!</div>
+            </div>
+
+            <!--To Do List-->
+            <div class="task-container">
+                <div class="card">
+                    <div class="card-header" id="cd-hd">
+                        <h5>Add Task</h5>
+                    </div>
+                    <div class="card-body task">
+                        <form id="addTaskForm">
+                            <div class="input-group mb-3">
+                                <input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="What would you like to do today ?" aria-describedby="btnAddNewTask">
+                                <div class="input-group-append">
+                                    <button class="btn btn-danger" type="submit" id="btnAddNewTask">
                                             <i class="fas fa-plus"></i>
                                         </button>
-                                    </div>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
+                    </div>
 
-                        <div class="card mt-3">
-                            <div class="card-header" id="cd-hd">
-                                <h5>Task List</h5>
-                                <a id="btnDeleteAll" href="#" class="btn btn-outline-light btn-sm delete-all float-right">	
+                    <div class="card mt-3">
+                        <div class="card-header" id="cd-hd">
+                            <h5>Task List</h5>
+                            <a id="btnDeleteAll" href="#" class="btn btn-outline-light btn-sm delete-all float-right">	
                                    Delete All
                                 </a>
-                            </div>
-                            <ul id="task-list" class="list-group">
-                            </ul>
                         </div>
+                        <ul id="task-list" class="list-group">
+                        </ul>
                     </div>
                 </div>
-        </section>
+            </div>
+    </section>
+    </div>
+    <!--Footer--->
+    <footer class="main__footer">
+        <h2>People worked on this project</h2>
+        <i class="fas fa-chevron-down"></i>
+        <div class="people">
+            <div class="person">
+                <h3>Ömer Koçar</h3>
+                <a href="#"><img class="avatar" src="img/blond2.jpg" alt="photo" /></a>
+            </div>
+            <div class="person">
+                <h3>feride mavigök</h3>
+                <a href="#"><img class="avatar" src="img/girl.png" alt="photo" /></a>
+            </div>
+            <div class="person">
+                <h3>doğukan özcan</h3>
+                <a href="#"><img class="avatar" src="img/boy.png" alt="photo" /></a>
+            </div>
         </div>
-        <!--Footer--->
-        <footer class="main__footer">
-            <h2>People worked on this project</h2>
-            <i class="fas fa-chevron-down"></i>
-            <div class="people">
-                <div class="person">
-                    <h3>Ömer Koçar</h3>
-                    <a href="#"><img class="avatar" src="img/blond2.jpg" alt="photo" /></a>
-                </div>
-                <div class="person">
-                    <h3>feride mavigök</h3>
-                    <a href="#"><img class="avatar" src="img/girl.png" alt="photo" /></a>
-                </div>
-                <div class="person">
-                    <h3>doğukan özcan</h3>
-                    <a href="#"><img class="avatar" src="img/boy.png" alt="photo" /></a>
-                </div>
+        <div class="footer__allrights">
+            <div class="footer__icons">
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-android"></i>
+                <span>|</span>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <span>|</span>
             </div>
-            <div class="footer__allrights">
-                <div class="footer__icons">
-                    <i class="fab fa-apple"></i>
-                    <i class="fab fa-android"></i>
-                    <span>|</span>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <span>|</span>
-                </div>
-                <div class="altyazi">
-                    <h3>© Pomodoro-Kodluyoruz 2022. All Rights Reserved.</h3>
-                </div>
-
+            <div class="altyazi">
+                <h3>© Pomodoro-Kodluyoruz 2022. All Rights Reserved.</h3>
             </div>
-        </footer>
 
-        <script src="app.js"></script>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 
 
