@@ -1,6 +1,4 @@
-*.png
-*.jpg
-img/
+
 *.gif
 
 .vscode/*
